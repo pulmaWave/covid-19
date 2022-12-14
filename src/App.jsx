@@ -1,5 +1,5 @@
 import './App.css'
-import Countries from './views/Countries/countries'
+import Countries from './views/Countries/Countries'
 
 function App() {
 
