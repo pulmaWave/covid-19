@@ -11,12 +11,12 @@ const Popup = ({ countryCode, hanldePopup }) => {
   }, [countryCode])
   return (
     <div className='popup'>
+      <div className='popup_overlay' onClick={hanldePopup}></div>
       {!data &&
         <div className='popup_spinner'>
           <Spinner />
         </div>
       }
-      <div className='popup_overlay' onClick={hanldePopup}></div>
       {
         data &&
         <div className="popup_content">
