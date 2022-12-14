@@ -10,9 +10,6 @@ const Countries = () => {
   const [countries, setCountries] = useState();
   const [countryCode, setCountryCode] = useState()
   const [showPopup, setShowPopup] = useState(false)
-  let popup = document.getElementById("popup");
-  let close = document.getElementsByClassName("popup_close")[0];
-
   useEffect(() => {
     fetch('https://api.covid19api.com/summary')
       .then(data => data.json())
