@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import sortTable from '../../utils/func'
-import Country from './Country';
+import Country from './country';
 import Spinner from '../../components/spinner/Spinner'
 import sortImg from '../../assets/sort.png'
 import "./style.scss"
-import Popup from '../../components/popup.jsx/Popup';
+import Popup from '../../components/popup/Popup';
 
 const Countries = () => {
   const [countries, setCountries] = useState();

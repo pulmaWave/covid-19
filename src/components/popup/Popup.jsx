@@ -10,12 +10,13 @@ const Popup = ({ countryCode, hanldePopup }) => {
       .then(json => setData(json))
   }, [countryCode])
   return (
-    <div className='popup' onClick={hanldePopup} >
+    <div className='popup'>
       {!data &&
         <div className='popup_spinner'>
           <Spinner />
         </div>
       }
+      <div className='popup_overlay' onClick={hanldePopup}></div>
       {
         data &&
         <div className="popup_content">
