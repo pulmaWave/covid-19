@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Country = ({ item }) => {
+const Country = ({ item, handleClick }) => {
   return (
-    <tr key={item.ID}>
-      <td className='countries_country'>{item.Country}</td>
-      <td className=''>{item.TotalConfirmed}</td>
-      <td className=''>{item.TotalRecovered}</td>
-      <td className=''>{item.TotalDeaths}</td>
+    <tr className='country' onClick={handleClick}>
+      <td>{item.Country}</td>
+      <td>{item.TotalConfirmed}</td>
+      <td>{item.TotalRecovered}</td>
+      <td>{item.TotalDeaths}</td>
     </tr>
   )
 }
