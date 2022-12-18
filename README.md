@@ -1,6 +1,6 @@
 # Covid-19 Tracker App
 
-Deployed live on https://covid-19-vand.vercel.app/ . Check out!
+Deployed live on https://covid-19-vand.netlify.app/ . Check out!
 
 # Getting Started with Vite - https://vitejs.dev/
 
